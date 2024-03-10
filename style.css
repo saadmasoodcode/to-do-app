@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ojuju';
+	user-select: none;
+}
+
+header h1 {
+	text-align: center;
+	margin-top: 55px;
+	user-select: none;
+}
+
+.input {
+	text-align: center;
+	margin-top: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.input input {
+	padding: 10px;
+	width: 400px;
+	border-radius: 5px 0px 0px 5px;
+	border: 1px solid rgb(212, 212, 212);
+	outline: none;
+	font-size: 20px;
+	user-select: all;
+}
+
+.input button {
+	padding: 10px;
+	font-weight: 900;
+	color: black;
+	width: 70px;
+	font-size: 20px;
+	border-radius: 0px 5px 5px 0px;
+	border: 1px solid rgb(212, 212, 212);
+	background-color: white;
+	user-select: none;
+}
+
+.input button:hover {
+	background-color: rgb(235, 235, 235);
+	cursor: pointer;
+}
+
+#todolistdiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#toDoList {
+	margin-top: 55px;
+	width: 600px;
+}
+
+.toDos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 2;
+	border: 1px solid rgb(212, 212, 212);
+	padding: 20px;
+	border-radius: 5px;
+	transition: 0.4s;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	flex: 1;
+}
+
+.toDos button {
+	background-color: transparent;
+	border: none;
+	margin-left: 30px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.toDos button:hover {
+	color: rgb(84, 84, 84);
+}
+
+.toDos li {
+	font-size: 25px;
+	font-weight: 600;
+}
+
+footer h4 {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.fa-xmark,
+.fa-square-check {
+	pointer-events: none;
+}
+
+.completed {
+	opacity: 0.2;
+	text-decoration: line-through;
+	background-color: greenyellow;
+}
+
+#clear {
+	width: 150px;
+	border-radius: 5px;
+	margin-left: 10px;
+	transition: 0.4s;
+}
+
+#clear:hover {
+	background-color: rgb(246, 73, 73);
+	color: white;
+}
