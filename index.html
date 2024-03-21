@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -21,6 +21,13 @@
 			<h1>To Do App</h1>
 		</header>
 		<div class="input">
+			<div id="todo-filter-div">
+				<select name="todofilter" id="todo-filter">
+					<option value="all">All</option>
+					<option value="completed">Completed</option>
+					<option value="incomplete">Incomplete</option>
+				</select>
+			</div>
 			<input id="input" type="text" />
 			<button id="addButton">Add</button>
 			<button id="clear">Clear All</button>

@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Ojuju';
+	font-family: 'Montserrat';
 	user-select: none;
 }
 
@@ -105,7 +105,7 @@ footer h4 {
 }
 
 .completed {
-	opacity: 0.2;
+	/* opacity: 0.2; */
 	text-decoration: line-through;
 	background-color: greenyellow;
 }
@@ -120,4 +120,27 @@ footer h4 {
 #clear:hover {
 	background-color: rgb(246, 73, 73);
 	color: white;
+}
+
+#todo-filter-div {
+	margin-right: 10px;
+	border: none;
+}
+
+select {
+	appearance: none;
+	outline: none;
+	border: 1px solid rgb(212, 212, 212);
+	border-radius: 4px;
+	padding: 10px;
+	font-weight: 900;
+	color: black;
+	width: 155px;
+	font-size: 20px;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+select:hover {
+	background-color: rgb(235, 235, 235);
 }
