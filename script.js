@@ -22,8 +22,6 @@ clearAll.addEventListener('click', function (e) {
 	save();
 });
 filter.addEventListener('click', filterToDo);
-// window.addEventListener('DOMContentLoaded', getTodos);
-//Functions *********************
 
 function addTask(e) {
 	if (input.value === '') {
@@ -37,8 +35,6 @@ function addTask(e) {
 		const li = document.createElement('li');
 		div.appendChild(li);
 		li.innerHTML = input.value;
-
-		// saveTodos(input.value);
 
 		const btn = document.createElement('button');
 		div.appendChild(btn);
@@ -59,7 +55,6 @@ function deleteCheck(e) {
 	const item = e.target;
 	if (item.classList[0] === 'remove') {
 		const todo = item.parentElement;
-		// removeTodos(todo);
 		todo.remove();
 		save();
 	}
@@ -94,59 +89,6 @@ function filterToDo(e) {
 		}
 	});
 }
-
-// function saveTodos(todo) {
-// 	let todos;
-// 	if (localStorage.getItem('todos') === null) {
-// 		todos = [];
-// 	} else {
-// 		todos = JSON.parse(localStorage.getItem('todos'));
-// 	}
-// 	todos.push(todo);
-// 	localStorage.setItem('todos', JSON.stringify(todos));
-// }
-
-// function getTodos(todo) {
-// 	let todos;
-// 	if (localStorage.getItem('todos') === null) {
-// 		todos = [];
-// 	} else {
-// 		todos = JSON.parse(localStorage.getItem('todos'));
-// 	}
-
-// 	todos.forEach(function (todo) {
-// 		const div = document.createElement('div');
-// 		const firstChild = toDoList.firstChild;
-// 		toDoList.insertBefore(div, firstChild);
-// 		div.classList.add('toDos');
-
-// 		const li = document.createElement('li');
-// 		div.appendChild(li);
-// 		li.innerHTML = todo;
-
-// 		const btn = document.createElement('button');
-// 		div.appendChild(btn);
-// 		btn.classList.add('checkbox');
-// 		btn.innerHTML = '<i class="fa-regular fa-square-check"></i>';
-
-// 		const btn2 = document.createElement('button');
-// 		div.appendChild(btn2);
-// 		btn2.classList.add('remove');
-// 		btn2.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-// 	});
-// }
-
-// function removeTodos(todo) {
-// 	let todos;
-// 	if (localStorage.getItem('todos') === null) {
-// 		todos = [];
-// 	} else {
-// 		todos = JSON.parse(localStorage.getItem('todos'));
-// 	}
-// 	const todoIndex = todo.children[0].innerText;
-// 	todos.splice(todos.indexOf(todoIndex), 1);
-// 	localStorage.setItem('todos', JSON.stringify(todos));
-// }
 
 function save() {
 	localStorage.setItem('todos', toDoList.innerHTML);
